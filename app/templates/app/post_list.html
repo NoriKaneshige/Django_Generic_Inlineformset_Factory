@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<a href="{% url 'app:add_post' %}" class="btn btn-primary">Add</a>
+<hr>
+{% for post in post_list %}
+    <p><a href="{% url 'app:update_post' post.pk %}">{{ post.title }}</a></p>
+    {% for file in post.files.all %}
+    {{ file }}<br>
+	{% endfor %}
+{% endfor %}
+
+
+
+{% endblock %}
