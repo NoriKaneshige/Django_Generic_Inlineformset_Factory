@@ -2,7 +2,7 @@
 
 [referred blog](https://narito.ninja/blog/detail/34/)
 
-![](.gif)
+![generic-inlineformset-factory](generic-inlineformset-factory.gif)
 
 > ## models.py
 ``` python
